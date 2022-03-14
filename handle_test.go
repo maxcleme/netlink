@@ -14,7 +14,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/vishvananda/netlink/nl"
+	"github.com/maxcleme/netlink/nl"
 	"github.com/vishvananda/netns"
 	"golang.org/x/sys/unix"
 )
