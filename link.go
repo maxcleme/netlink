@@ -1258,6 +1258,18 @@ const (
 	CAN_STATE_SLEEPING
 )
 
+type VCan struct {
+	Can
+}
+
+func (vcan *VCan) Attrs() *LinkAttrs {
+	return &vcan.Can.LinkAttrs
+}
+
+func (vcan *VCan) Type() string {
+	return "vcan"
+}
+
 type Can struct {
 	LinkAttrs
 
